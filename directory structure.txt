@@ -1,0 +1,61 @@
+NextStyle/
+│
+├── vendor/                      (managed by Composer)
+│   ├── autoload.php             (Composer autoload file)
+│   └── ...                       (other Composer-related files and directories)
+├── public/                      (frontend files accessible to the public)
+│   ├── index.php                (entry point for your application)
+│   ├── css/
+│   │   ├── client/              (client-side CSS files)
+│   │   │   ├── cart.css         (CSS styles for cart page)
+│   │   │   ├── home.css         (CSS styles for home page)
+│   │   │   ├── log_reg.css      (CSS styles for login/register pages)
+│   │   │   └── profile.css      (CSS styles for profile page)
+│   │   └── admin/               (admin-side CSS files)
+│   │       ├── add_product.css  (CSS styles for add product page)
+│   │       └── admin.css        (CSS styles for admin dashboard)
+│   ├── js/
+│   │   ├── client/              (client-side JavaScript files)
+│   │   │   ├── cart.js          (JavaScript for cart page)
+│   │   │   ├── home.js          (JavaScript for home page)
+│   │   │   ├── login.js         (JavaScript for login page)
+│   │   │   ├── profile.js       (JavaScript for profile page)
+│   │   │   └── register.js      (JavaScript for register page)
+│   │   └── admin/               (admin-side JavaScript files)
+│   │       └── adminPage.js     (JavaScript for admin dashboard)
+│   ├── img/
+│   │   └── logo.png             (image files)
+│   ├── client/                  (client-side HTML pages)
+│   │   ├── register.html
+│   │   ├── login.html
+│   │   ├── profile.html
+│   │   ├── home.html
+│   │   └── cart.html
+│   └── admin/                   (admin-side HTML pages)
+│       ├── admin_dashboard.html
+│       ├── add_product.html
+│       └── edit_product.html
+├── php/                         (PHP files)
+│   ├── db/                      (folder for database-related PHP files)
+│   │   ├── mongodb.php          (MongoDB connection file)
+│   │   └── mysql.php            (MySQL connection file)
+│   ├── client/                  (client-side PHP logic)
+│   │   ├── register.php
+│   │   ├── login.php
+│   │   ├── profile.php
+│   │   ├── home.php
+│   │   └── cart.php
+│   └── admin/                   (admin-side PHP logic)
+│       ├── admin_dashboard.php
+│       ├── add_product.php
+│       └── edit_product.php
+├── src/                         (server-side PHP source code)
+│   ├── controllers/             (PHP controllers)
+│   │   └── controller.php       (Controller file)
+│   ├── models/                  (PHP model classes)
+│   │   └── models.php           (Models file)
+│   └── views/                   (PHP view files)
+├── templates/                   (HTML templates, if using a templating engine)
+├── composer.json
+├── composer.lock
+└── .gitignore

@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  height: 60px;
+  padding: 20px;
+  gap: 150px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+li {
+  list-style: none;
+}
+.list {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.divcart {
+  height: 100px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 1.5rem sans-serif;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.divcart::before,
+.divcart::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  background-color: #8c82fc;
+  transition: all 250ms ease-in-out;
+}
+
+.divcart::before {
+  width: 2px;
+  height: 100px;
+  box-shadow: 298px 0 #8c82fc;
+}
+
+.divcart::after {
+  height: 2px;
+  width: 300px;
+  box-shadow: 0 98px #8c82fc;
+}
+
+.divcart:hover::before {
+  left: -10px;
+  box-shadow: 318px 0 #8c82fc;
+}
+
+.divcart:hover::after {
+  top: -10px;
+  box-shadow: 0 118px #8c82fc;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #8b8a8a;
+}
+tr:hover {
+  background-color: #8c82fc;
+}
+
+
+.button-59 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #8c82fc;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  min-width: 50px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 10px;
+}
+
+.button-59:focus {
+  color: #171e29;
+  border-radius: 10px;
+}
+
+.button-59:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.button-59:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}

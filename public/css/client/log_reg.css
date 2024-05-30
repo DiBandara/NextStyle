@@ -1,0 +1,149 @@
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.leftside {
+  display: flex;
+  width: 60%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.rightside {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100vh;
+  justify-content: center;
+  background-color: #e6d5bb;
+}
+.regform {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 70vh;
+  height: auto;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form__group {
+  position: relative;
+  padding: 10px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #000000;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 20px;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+  }
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
+
+
+.button-59 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #8c82fc;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  min-width: 50px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 10px;
+}
+
+.button-59:focus {
+  color: #171e29;
+  border-radius: 10px;
+}
+
+.button-59:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.button-59:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
+
